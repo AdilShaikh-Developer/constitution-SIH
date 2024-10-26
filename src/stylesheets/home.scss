@@ -1,0 +1,73 @@
+header:has(+ .home-page) {
+  .navbar {
+    display: none;
+  }
+}
+.home-page {
+  .utility-container {
+    background: $white-background;
+    padding: 15px;
+
+    .search-bar {
+      border: 1px solid grey;
+      border-radius: 8px;
+      margin-bottom: 10px;
+
+      display: grid;
+      grid-template-columns: 9fr 1fr;
+
+      input {
+        padding: 5px;
+        font-size: 1rem;
+        outline: none;
+        border: none;
+        border-radius: 8px;
+      }
+      button {
+        outline: none;
+        border: none;
+        border-radius: 8px;
+
+        font-size: 1.5rem;
+        aspect-ratio: 1/1;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        svg {
+          padding-left: 5px;
+          border-left: 1px solid grey;
+        }
+      }
+    }
+
+    .options-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      // grid-template-columns: 1fr 1fr;
+      gap: 10px;
+
+      select {
+        padding: 10px 5px;
+        font-size: 1rem;
+        outline: none;
+        border: 1px solid grey;
+        border-radius: 8px;
+
+        option {
+          font-size: 0.75rem;
+        }
+      }
+    }
+  }
+
+  main {
+    background: $green-background;
+    padding: 5vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3vw;
+  }
+}

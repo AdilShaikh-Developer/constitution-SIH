@@ -1,0 +1,24 @@
+.article-page {
+  main {
+    padding: 5vw;
+
+    div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      h1 {
+        font-size: 1rem;
+      }
+    }
+
+    h1 {
+      font-size: 1.5rem;
+    }
+
+    span {
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+  }
+}
